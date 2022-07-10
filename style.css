@@ -1,0 +1,33 @@
+:root {
+    --gradient: linear-gradient(75deg, #D9AFD9 0%, #97D9E1 100%);
+}
+
+body {
+    height: 100vh;
+    background-color: white;
+    background-image: var(--gradient);
+    background-size: 2500%;
+    background-position: right;
+    animation: gradient-bg 18s infinite alternate;
+    display: flex;
+}
+
+@keyframes gradient-bg {
+    0% {
+        background-position: right;
+    }
+
+    100% {
+        background-position: left;
+    }
+}
+
+h1 {
+    font-size: 8rem;
+    text-align: center;
+    margin: auto;
+    font-family: 'Anton', sans-serif;
+    color: #dfe6e9;
+    outline-offset: 3px;
+    filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.9));
+}
